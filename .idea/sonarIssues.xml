@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../LOT_Polish_Airlines/lot-polish-airlines-aem/ui.apps/src/main/content/jcr_root/apps/lot-polish-airlines/components/priceboxes/fallbackImageTab.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/core/src/main/java/com/adobe/aem/learning/core/models/ComponentDemoModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/core/src/main/java/com/adobe/aem/learning/core/models/LinkModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/core/src/main/java/com/adobe/aem/learning/core/models/Links.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/core/src/main/java/com/adobe/aem/learning/core/models/MyComponentModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/core/src/main/java/com/adobe/aem/learning/core/models/MyTitleModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/core/src/main/java/com/adobe/aem/learning/core/models/Mytitle.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/core/src/main/java/com/adobe/aem/learning/core/models/MytitleModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/clientlibs/clientlib-dialog/.content.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/clientlibs/clientlib-dialog/js/site.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/clientlibs/clientlib-dialog/js/textValidator.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/clientlibs/clientlib-mytitle/.content.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/clientlibs/clientlib-mytitle/css/site.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/componentDemo/.content.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/componentDemo/_cq_dialog/.content.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/componentDemo/componentDemo.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/componentDemo/propertiesTab.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/customLearning/.content.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/customLearning/_cq_dialog.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/customLearning/_cq_dialog/.content.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/customLearning/customLearning.fxml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/customLearning/customLearning.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/myComponent/.content.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/myComponent/leaning.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/myComponent/myComponent.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/myComponent/myComponentLearning.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/myTitle/.content.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/myTitle/_cq_dialog.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/myTitle/_cq_dialog/.content.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/myTitle/myTitle.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/learning/components/learning/text/.content.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.apps/target/generated-sources/htl/org/apache/sling/scripting/sightly/apps/learning/components/learning/myTitle/myTitle_html.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/learning/settings/wcm/policies/.content.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/learning/settings/wcm/templates/learning-page-template/.content.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/learning/settings/wcm/templates/learning-page-template/initial/.content.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

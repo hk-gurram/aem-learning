@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/learning/settings/wcm/templates/learning-page-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="learning/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="learning/components/container"
+            layout="responsiveGrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="7" />
+                </cq:responsive>
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Main Content"
+                    sling:resourceType="learning/components/title"
+                    type="h1" />
+            </responsivegrid>
+            <responsivegrid_715892499
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="3" />
+                </cq:responsive>
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Side Content"
+                    sling:resourceType="learning/components/title"
+                    type="h1" />
+            </responsivegrid_715892499>
+        </root>
+    </jcr:content>
+</jcr:root>

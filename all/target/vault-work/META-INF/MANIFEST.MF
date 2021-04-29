@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Title: Learning Sites Project - All
+Content-Package-Roots: /apps/learning-packages,/apps/learning-vendor-p
+ ackages
+Implementation-Version: 0.0.1-SNAPSHOT
+Build-Jdk-Spec: 1.8
+Content-Package-Type: container
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.4
+Content-Package-Id: com.adobe.aem.learning:aem-learning.all:0.0.1-SNAP
+ SHOT
+Content-Package-Description: All content package for Learning Sites Pr
+ oject
+

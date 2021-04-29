@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Template"
+          allowedPaths="[/content/dam/lot-polish-airlines(/.*)?]"
+          ranking="{Long}100">
+    <jcr:content
+        cq:scaffolding="/conf/lot-polish-airlines/settings/dam/cfm/models/fare-family/jcr:content/model"
+        cq:templateType="/libs/settings/dam/cfm/model-types/fragment"
+        jcr:description="Content fragments for fare family"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Fare Family"
+        sling:resourceSuperType="dam/cfm/models/console/components/data/entity"
+        sling:resourceType="dam/cfm/models/console/components/data/entity/default">
+        <model
+            cq:targetPath="/content/entities"
+            jcr:primaryType="cq:PageContent"
+            sling:resourceType="wcm/scaffolding/components/scaffolding"
+            dataTypesConfig="/mnt/overlay/settings/dam/cfm/models/formbuilderconfig/datatypes"
+            maxGeneratedOrder="20">
+            <cq:dialog
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/authoring/dialog">
+                <content
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                    <items
+                        jcr:primaryType="nt:unstructured"
+                        maxGeneratedOrder="41">
+                        <travelDistance
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Travel distance"
+                            listOrder="24"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="travelDistance"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string" />
+                        <cabinClass
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Cabin class"
+                            listOrder="25"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="cabinClass"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string" />
+                        <checkedLuggage
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Checked luggage"
+                            listOrder="21"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="checkedLuggage"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string" />
+                        <checkedBaggageForInfant
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Checked baggage for infant"
+                            listOrder="22"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="checkedBaggageForInfant"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string" />
+                        <carryOnLuggage
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Carry-on luggage"
+                            listOrder="23"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="carryOnLuggage"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string" />
+                        <airportCheckIn
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="26"
+                            metaType="boolean"
+                            name="airportCheckIn"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="Airport check-in"
+                            valueType="boolean" />
+                        <waterAndSnack
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="27"
+                            metaType="boolean"
+                            name="waterAndSnack"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="Water and snack"
+                            valueType="boolean" />
+                        <ticketChange
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="28"
+                            metaType="boolean"
+                            name="ticketChange"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="Ticket Change"
+                            valueType="boolean" />
+                        <refund
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="29"
+                            metaType="boolean"
+                            name="refund"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="Refund"
+                            valueType="boolean" />
+                        <flightCoupons
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="30"
+                            metaType="boolean"
+                            name="flightCoupons"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="Possibility of using flight coupons out of sequence"
+                            valueType="boolean" />
+                        <myFavoriteSeat
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="31"
+                            metaType="boolean"
+                            name="myFavoriteSeat"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="My favorite seat"
+                            valueType="boolean" />
+                        <kidsDiscount
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="32"
+                            metaType="boolean"
+                            name="kidsDiscount"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="Kids discount"
+                            valueType="boolean" />
+                        <mealsAndBeverages
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Meals and beverages"
+                            listOrder="33"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="mealsAndBeverages"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string" />
+                        <businessLounge
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="35"
+                            metaType="boolean"
+                            name="businessLounge"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="Business lounge"
+                            valueType="boolean" />
+                        <priorityBoarding
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="36"
+                            metaType="boolean"
+                            name="priorityBoarding"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="Priority boarding"
+                            valueType="boolean" />
+                        <usbPorts
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="37"
+                            metaType="boolean"
+                            name="usbPorts"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="USB ports, electrical plugs"
+                            valueType="boolean" />
+                        <individualScreen
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Individual screen"
+                            listOrder="38"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="individualScreen"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string" />
+                        <ife
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="39"
+                            metaType="boolean"
+                            name="ife"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="IFE"
+                            valueType="boolean" />
+                        <digitalPress
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="40"
+                            metaType="boolean"
+                            name="digitalPress"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="Digital press"
+                            valueType="boolean" />
+                        <fastTrack
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="41"
+                            metaType="boolean"
+                            name="fastTrack"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="Fast track"
+                            valueType="boolean" />
+                    </items>
+                </content>
+            </cq:dialog>
+        </model>
+    </jcr:content>
+</jcr:root>
