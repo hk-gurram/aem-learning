@@ -6,6 +6,6 @@
         jcr:description="Learning Page Template"
         jcr:primaryType="cq:PageContent"
         jcr:title="Learning Page Template"
-        allowedParents="/conf/learning/settings/wcm/templates/page-content"
+        allowedParents="[/conf/learning/settings/wcm/templates/page-content]"
         status="enabled" />
 </jcr:root>
