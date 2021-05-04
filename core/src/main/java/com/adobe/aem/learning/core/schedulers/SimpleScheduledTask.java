@@ -37,7 +37,7 @@ public class SimpleScheduledTask implements Runnable {
     public static @interface Config {
 
         @AttributeDefinition(name = "Cron-job expression")
-        String scheduler_expression() default "*/30 * * * * ?";
+        String scheduler_expression() default "*/01 * * * * ?";
 
         @AttributeDefinition(name = "Concurrent task",
                              description = "Whether or not to schedule this task concurrently")
@@ -45,7 +45,7 @@ public class SimpleScheduledTask implements Runnable {
 
         @AttributeDefinition(name = "A parameter",
                              description = "Can be configured in /system/console/configMgr")
-        String myParameter() default "";
+        String myParameter() default "This is Test scheduler";
     }
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
@@ -54,7 +54,7 @@ public class SimpleScheduledTask implements Runnable {
     
     @Override
     public void run() {
-        logger.debug("SimpleScheduledTask is now running, myParameter='{}'", myParameter);
+        logger.error("Learning ---> SimpleScheduledTask is now running, myParameter='{}'", myParameter);
     }
 
     @Activate

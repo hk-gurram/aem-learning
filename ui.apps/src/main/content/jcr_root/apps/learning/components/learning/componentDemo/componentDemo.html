@@ -1,6 +1,6 @@
 <sly data-sly-use.componentDemo="com.adobe.aem.learning.core.models.ComponentDemoModel"
      data-sly-use.template="core/wcm/components/commons/v1/templates.html"
-     data-sly-test.myTitle="${componentDemo.myTitle}"
+     data-sly-test.myTitle="${componentDemo.myTitleModel.myTitle}"
      class="cmp-title">
     <h1>${myTitle}</h1>
     <sly data-sly-list.link="${componentDemo.links}">

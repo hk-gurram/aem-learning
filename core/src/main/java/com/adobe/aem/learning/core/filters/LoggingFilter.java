@@ -16,6 +16,7 @@
 package com.adobe.aem.learning.core.filters;
 
 import java.io.IOException;
+
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -35,31 +36,26 @@ import org.slf4j.LoggerFactory;
 /**
  * Simple servlet filter component that logs incoming requests.
  */
-@Component(service = Filter.class,
-           property = {
-                   EngineConstants.SLING_FILTER_SCOPE + "=" + EngineConstants.FILTER_SCOPE_REQUEST,
-           })
+@Component(service = Filter.class, property = { EngineConstants.SLING_FILTER_SCOPE + "=" + EngineConstants.FILTER_SCOPE_REQUEST, })
 @ServiceDescription("Demo to filter incoming requests")
 @ServiceRanking(-700)
 @ServiceVendor("Adobe")
 public class LoggingFilter implements Filter {
 
-    private final Logger logger = LoggerFactory.getLogger(getClass());
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Override
-    public void doFilter(final ServletRequest request, final ServletResponse response,
-                         final FilterChain filterChain) throws IOException, ServletException {
+    public void doFilter(final ServletRequest request, final ServletResponse response, final FilterChain filterChain) throws IOException, ServletException {
 
         final SlingHttpServletRequest slingRequest = (SlingHttpServletRequest) request;
-        logger.debug("request for {}, with selector {}", slingRequest
-                .getRequestPathInfo().getResourcePath(), slingRequest
-                .getRequestPathInfo().getSelectorString());
+        this.logger.error("request for {}, with selector {}", slingRequest.getRequestPathInfo().getResourcePath(),
+          slingRequest.getRequestPathInfo().getSelectorString());
 
         filterChain.doFilter(request, response);
     }
 
     @Override
-    public void init(FilterConfig filterConfig) {
+    public void init(final FilterConfig filterConfig) {
     }
 
     @Override

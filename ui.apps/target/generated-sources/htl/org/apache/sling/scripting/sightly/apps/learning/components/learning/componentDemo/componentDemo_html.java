@@ -40,7 +40,7 @@ Object _global_mytitle = null;
 Collection var_collectionvar1_list_coerced$ = null;
 _global_componentdemo = renderContext.call("use", com.adobe.aem.learning.core.models.ComponentDemoModel.class.getName(), obj());
 _global_template = renderContext.call("use", "core/wcm/components/commons/v1/templates.html", obj());
-_global_mytitle = renderContext.getObjectModel().resolveProperty(_global_componentdemo, "myTitle");
+_global_mytitle = renderContext.getObjectModel().resolveProperty(renderContext.getObjectModel().resolveProperty(_global_componentdemo, "myTitleModel"), "myTitle");
 if (renderContext.getObjectModel().toBoolean(_global_mytitle)) {
     out.write("\n    <h1>");
     {
