@@ -1,10 +1,16 @@
 <sly data-sly-use.model="com.adobe.aem.learning.core.models.ServiceDemoModel"
      data-sly-use.template="core/wcm/components/commons/v1/templates.html"
      data-sly-test.heading="${model.heading}"
-     class="cmp-title">
+     class="cmp-title"
+     xmlns="http://www.w3.org/1999/html">
     <h1>${heading}</h1>
     <h2 data-sly-test="${model.courseName}">Course Name -----> ${model.courseName}</h2>
     <h2 data-sly-test="${model.courseDuration}">Course Duration ----> ${model.courseDuration}</h2>
     <h2 data-sly-test="${model.courseRequirement}">Course Requirement ----> ${model.courseRequirement}</h2>
+    </br>
+    <h2>Page paths of component title</h2>
+    <sly data-sly-list.path="${model.paths}">
+        <h3>${path}</h3>
+    </sly>
 </sly>
 <sly data-sly-call="${template.placeholder @ isEmpty=!heading, classAppend='cmp-title'}"></sly>

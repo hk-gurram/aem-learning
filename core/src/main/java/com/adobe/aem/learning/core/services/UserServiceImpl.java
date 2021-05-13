@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
@@ -16,6 +17,7 @@ import org.osgi.service.metatype.annotations.Designate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.day.cq.commons.Externalizer;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 
@@ -28,6 +30,9 @@ public class UserServiceImpl implements UserService {
 
     @Reference
     private ResourceResolverFactory resourceResolverFactory;
+
+    @Reference
+    private Externalizer externalizer;
 
     private String pagePath;
 
@@ -42,8 +47,7 @@ public class UserServiceImpl implements UserService {
                 final Page page = pageManager.getContainingPage(resource);
                 if (page != null) {
                     final Iterator<Page> pages = page.listChildren();
-                    pages.forEachRemaining(p -> paths.add(p.getPath()));
-
+                    pages.forEachRemaining(p -> paths.add(this.externalizer.authorLink(resourceResolver, StringUtils.join(p.getPath(), ".html"))));
                 }
             }
         } catch (final LoginException e) {
