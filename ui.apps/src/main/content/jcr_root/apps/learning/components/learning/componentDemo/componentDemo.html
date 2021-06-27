@@ -4,10 +4,10 @@
      class="cmp-title">
     <h1>${myTitle}</h1>
     <sly data-sly-list.link="${componentDemo.links}">
-        <h2 data-sly-test="${link.label}">${link.label}</h2>
-        <h3 data-sly-test="${link.linkPath}">${link.linkPath}</h3>
-        <h4 data-sly-test="${link.target}">${link.target}</h4>
-        <h5 data-sly-test="${link.external}">${link.external}</h5>
+        <h2 data-sly-test="${link.label}">Title --> ${link.label}</h2>
+        <h3 data-sly-test="${link.linkPath}">Path --> ${link.linkPath}</h3>
+        <h4 data-sly-test="${link.target}">Target --> ${link.target}</h4>
+        <h5 data-sly-test="${link.external}">External Link --> ${link.external}</h5>
     </sly>
 </sly>
 <sly data-sly-call="${template.placeholder @ isEmpty=!myTitle, classAppend='cmp-title'}"></sly>
